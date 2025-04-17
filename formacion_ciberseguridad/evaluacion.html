@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cuestionario de Ciberseguridad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="password"] {
+      padding: 8px;
+      width: 300px;
+    }
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h1>Cuestionario de Ciberseguridad</h1>
+
+<form id="quizForm">
+  <ol>
+    <li>¿Qué es el phishing?
+      <br><input type="text" name="q1">
+    </li>
+    <li>¿Qué debes hacer si recibes un correo sospechoso?
+      <br><input type="text" name="q2">
+    </li>
+    <li>¿Por qué es importante usar contraseñas fuertes?
+      <br><input type="text" name="q3">
+    </li>
+    <li>¿Cuál es el uso del antivirus?
+      <br><input type="text" name="q4">
+    </li>
+    <li>¿Qué es el MFA (autenticación multifactor)?
+      <br><input type="text" name="q5">
+    </li>
+    <li>¿Está permitido anotar tus contraseñas en un papel?
+      <br><input type="text" name="q6">
+    </li>
+    <li>¿Qué hacer si pierdes tu portátil de trabajo?
+      <br><input type="text" name="q7">
+    </li>
+    <li>¿Qué medidas debes tomar al conectarte a una red Wi-Fi pública?
+      <br><input type="text" name="q8">
+    </li>
+    <li>¿Cuál es el riesgo de no actualizar el software?
+      <br><input type="text" name="q9">
+    </li>
+    <li>¿Qué indica un candado en la barra de direcciones del navegador?
+      <br><input type="text" name="q10">
+    </li>
+    <li>¿Qué es el ransomware y cómo afecta a una empresa?
+      <br><input type="text" name="q11">
+    </li>
+    <li>¿Por qué es importante bloquear la pantalla cuando te alejas del ordenador?
+      <br><input type="text" name="q12">
+    </li>
+    <li>¿Qué debes revisar antes de hacer clic en un enlace en un correo?
+      <br><input type="text" name="q13">
+    </li>
+    <li>¿Es seguro reutilizar contraseñas en diferentes servicios?
+      <br><input type="text" name="q14">
+    </li>
+    <li>¿Qué debes hacer si sospechas que tu cuenta ha sido comprometida?
+      <br><input type="text" name="q15">
+    </li>
+  </ol>
+  <button type="submit">Enviar</button>
+</form>
+
+  </div>
+
+<div class="section">
+  <h2>¿Es este enlace sospechoso?</h2>
+  <form id="linkCheckForm">
+    <ol>
+      <li>
+        <a href="#">https://www.microsoft.com</a><br>
+        <label><input type="radio" name="link1" value="yes"> Sí</label>
+        <label><input type="radio" name="link1" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://www.mіcrosoft.com</a> <!-- i latina reemplazada por "і" cirílica -->
+        <label><input type="radio" name="link2" value="yes"> Sí</label>
+        <label><input type="radio" name="link2" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://login.paypal.com</a><br>
+        <label><input type="radio" name="link3" value="yes"> Sí</label>
+        <label><input type="radio" name="link3" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://paypal.com.secure-login.support</a><br>
+        <label><input type="radio" name="link4" value="yes"> Sí</label>
+        <label><input type="radio" name="link4" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://www.google.com</a><br>
+        <label><input type="radio" name="link5" value="yes"> Sí</label>
+        <label><input type="radio" name="link5" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://googIe.com</a> <!-- L minúscula reemplazada por I mayúscula -->
+        <label><input type="radio" name="link6" value="yes"> Sí</label>
+        <label><input type="radio" name="link6" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://www.dropbox.com</a><br>
+        <label><input type="radio" name="link7" value="yes"> Sí</label>
+        <label><input type="radio" name="link7" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://dropbox.com.file-download.co</a><br>
+        <label><input type="radio" name="link8" value="yes"> Sí</label>
+        <label><input type="radio" name="link8" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://www.amazon.com</a><br>
+        <label><input type="radio" name="link9" value="yes"> Sí</label>
+        <label><input type="radio" name="link9" value="no"> No</label>
+      </li>
+      <li>
+        <a href="#">https://аmazon.com</a> <!-- Primera "a" es letra cirílica -->
+        <label><input type="radio" name="link10" value="yes"> Sí</label>
+        <label><input type="radio" name="link10" value="no"> No</label>
+      </li>
+    </ol>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+
+
+  <div class="section">
+    <h2>Comprobador de Contraseñas</h2>
+    <input type="password" id="passwordInput" placeholder="Introduce tu contraseña">
+    <button onclick="checkPassword()">Comprobar</button>
+    <div class="result" id="passwordResult"></div>
+  </div>
+
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("¡Gracias por completar el cuestionario!");
+    });
+
+    function checkPassword() {
+      const password = document.getElementById("passwordInput").value;
+      const resultDiv = document.getElementById("passwordResult");
+
+      const lengthCheck = password.length >= 8;
+      const upperCheck = /[A-Z]/.test(password);
+      const lowerCheck = /[a-z]/.test(password);
+      const numberCheck = /\d/.test(password);
+      const symbolCheck = /[^A-Za-z0-9]/.test(password);
+
+      let resultMessage = "";
+      if (lengthCheck && upperCheck && lowerCheck && numberCheck && symbolCheck) {
+        resultMessage = "La contraseña cumple con los estándares de seguridad.";
+        resultDiv.style.color = "green";
+      } else {
+        resultMessage = "La contraseña NO cumple con los estándares. Faltan: <ul>";
+        if (!lengthCheck) resultMessage += "<li>Al menos 8 caracteres</li>";
+        if (!upperCheck) resultMessage += "<li>Una letra mayúscula</li>";
+        if (!lowerCheck) resultMessage += "<li>Una letra minúscula</li>";
+        if (!numberCheck) resultMessage += "<li>Un número</li>";
+        if (!symbolCheck) resultMessage += "<li>Un símbolo</li>";
+        resultMessage += "</ul>";
+        resultDiv.style.color = "red";
+      }
+
+      resultDiv.innerHTML = resultMessage;
+    }
+  </script>
+</body>
+</html>
